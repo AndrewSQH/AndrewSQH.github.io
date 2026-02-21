@@ -1,0 +1,189 @@
+name: flutter_application
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  # Core dependencies
+  image_picker: ^1.1.2
+  provider: ^6.1.2
+  path_provider: ^2.1.4
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  image: ^4.2.0
+  # 应用监控
+  firebase_core: ^3.6.0
+  firebase_crashlytics: ^4.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^6.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # Assets
+  assets:
+  - assets/templates/
+  - assets/fonts/
+  - assets/frames/
+  - assets/backgrounds/
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+  - family: QingChaKaiTi
+    fonts:
+    - asset: assets/fonts/qingcha_kaiti.ttf
+  - family: XingKaiTi
+    fonts:
+    - asset: assets/fonts/xing_kaiti.TTF
+  - family: LongCang
+    fonts:
+    - asset: assets/fonts/long-cang-6500.woff
+  - family: MaShanZheng
+    fonts:
+    - asset: assets/fonts/ma-shan-zheng-6500.woff
+  - family: ZhiMangXing
+    fonts:
+    - asset: assets/fonts/zhi-mang-xing-6500.woff
+  # 思源字体系列
+  - family: SourceHanSansCN
+    fonts:
+    - asset: assets/fonts/思源字体系列/思源黑体/SourceHanSansCN-Regular.otf
+  - family: SourceHanSerifCN
+    fonts:
+    - asset: assets/fonts/思源字体系列/思源宋体/SourceHanSerifCN-Regular.ttf
+  - family: GenShinGothic
+    fonts:
+    - asset: assets/fonts/思源字体系列/思源真黑/GenShinGothic-Regular.ttf
+  - family: GenJyuuGothic
+    fonts:
+    - asset: assets/fonts/思源字体系列/思源柔黑/GenJyuuGothicL-Regular.ttf
+  # 方正字体系列
+  - family: FangZhengSong
+    fonts:
+    - asset: assets/fonts/方正字体系列/方正书宋简体.ttf
+  - family: FangZhengFangSong
+    fonts:
+    - asset: assets/fonts/方正字体系列/方正仿宋简体.ttf
+  - family: FangZhengKai
+    fonts:
+    - asset: assets/fonts/方正字体系列/方正楷体简体.ttf
+  - family: FangZhengHei
+    fonts:
+    - asset: assets/fonts/方正字体系列/方正黑体简体.ttf
+  # 站酷字体系列
+  - family: ZhanKuGaoDuanHei
+    fonts:
+    - asset: assets/fonts/站酷字体系列/ 站酷高端黑.ttf
+  - family: ZhanKuKuHeiTi
+    fonts:
+    - asset: assets/fonts/站酷字体系列/站酷酷黑体.ttf
+  - family: ZhanKuKuaiLeTi
+    fonts:
+    - asset: assets/fonts/站酷字体系列/站酷快乐体.ttf
+  - family: ZhanKuWenYiTi
+    fonts:
+    - asset: assets/fonts/站酷字体系列/站酷文艺体.ttf
+  # 王汉宗字体系列
+  - family: WangHanZongKai
+    fonts:
+    - asset: assets/fonts/王汉宗字体系列/王漢宗中楷體注音.ttf
+  - family: WangHanZongXing
+    fonts:
+    - asset: assets/fonts/王汉宗字体系列/王漢宗中行書繁.ttf
+  - family: WangHanZongLi
+    fonts:
+    - asset: assets/fonts/王汉宗字体系列/王漢宗中隸書繁.ttf
+  # 演示字体系列
+  - family: YanShiFoXiTi
+    fonts:
+    - asset: assets/fonts/其他字体/演示佛系体.ttf
+  - family: YanShiXiaXingKai
+    fonts:
+    - asset: assets/fonts/其他字体/演示夏行楷.ttf
+  - family: YanShiYouRanXiaoKai
+    fonts:
+    - asset: assets/fonts/其他字体/演示悠然小楷.ttf
+  # 庞门正道字体系列
+  - family: PangMenZhengDaoBiaoTi
+    fonts:
+    - asset: assets/fonts/庞门正道字体系列/庞门正道标题体.ttf
+  - family: PangMenZhengDaoCuShu
+    fonts:
+    - asset: assets/fonts/庞门正道字体系列/庞门正道粗书体.ttf
+  # 阿里巴巴普惠体
+  - family: AlibabaPuHuiTi
+    fonts:
+    - asset: assets/fonts/阿里巴巴普惠体/Alibaba-PuHuiTi-Regular.ttf
+  # 沐瑶字体系列
+  - family: MuYaoRuanBi
+    fonts:
+    - asset: assets/fonts/沐瑶字体系列/沐瑶软笔手写体.ttf
+  - family: MuYaoSuiXin
+    fonts:
+    - asset: assets/fonts/沐瑶字体系列/沐瑶随心手写体.ttf
+  # 胡晓波字体系列
+  - family: HuXiaoBoNanShen
+    fonts:
+    - asset: assets/fonts/胡晓波字体系列/胡晓波男神体.otf
+  - family: HuXiaoBoZhenShuai
+    fonts:
+    - asset: assets/fonts/胡晓波字体系列/胡晓波真帅体.otf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
